@@ -1,0 +1,96 @@
+
+.withdrow-sec{
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
+    > .container{
+        background-color: #FFF;
+        border: 1px solid #E6E6F4;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    .heading-g{
+        margin-bottom: 30px;
+        font-size: $size-18;
+        color: #19224C;
+    }
+    .balance{
+        background-color: #FAFDFF;
+        border-radius: 5px;
+        border: 1px solid #E6E6F4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px;
+        min-height: 56px;
+        margin-bottom: 30px;
+        .text{
+            font-size: 16px;
+            color: #434665;
+        }
+        .num{
+            font-size: 20px;
+            font-weight: bold;
+            color: #19224C;
+        }
+    }
+    .amount{
+        margin-bottom: 30px;
+        .input-group{
+            .form-control{
+                height: auto;
+                min-height: 56px;
+            }
+        }
+    }
+    .card-method{
+        background-color: #F6FCFF;
+        border-radius: 16px;
+        padding: 24px 24px;
+        margin-bottom: 24px;
+        .hold-icon{
+            margin-bottom: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: rgba(180, 122, 255, 10%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .media-body{
+            margin-inline-start: 24px;
+            @media (max-width: 768px){
+                margin-inline-start: 15px;
+            }
+            .info{
+                font-size: 16px;
+                color: #19224C;
+                margin-bottom: 16px;
+            }
+        }
+        &.wallet-card{
+            .hold-icon{
+                background-color: rgba(46, 129, 255, 10%);
+            }
+        }
+        .dropdown-menu{
+            left: unset !important;
+            right: 5px;
+            top: -16px !important;
+            min-width: 100px;
+            .dropdown-item{
+                padding: .25rem 15px;
+            }
+        }
+    }
+    .add-btn{
+        color: $mainColor;
+        background-color: rgba( $mainColor, .1);
+        max-width: 185px;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+}

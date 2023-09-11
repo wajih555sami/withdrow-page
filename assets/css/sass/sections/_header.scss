@@ -1,0 +1,69 @@
+@import '../variables/_variables.scss';
+
+.header-sec{
+    .navbar{
+        background-color: transparent;
+        padding: 24px 0px;
+        transition: .3s;
+        // box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+        &.scroll{
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+        }
+        .navbar-toggler{
+            border: 0;
+        }
+    }
+    .header-side-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-inline-start: auto;
+        .bell-btn{
+            position: relative;
+            margin: 0 30px;
+            &.active{
+                position: absolute;
+                top: 0;
+                inset-inline-end: 10px;
+                background-color: #CCC;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            figure{
+                margin-bottom: 0;
+            }
+        }
+        .hold-dropdown{
+            .dropdown-toggle{
+                display: flex;
+                align-items: center;
+                &::after{
+                    display: inline-block;
+                    margin-inline-start: 9px;
+                    background: url(../img/icon-down.svg) center no-repeat;
+                    width: 10px;
+                    height: 6px;
+                    background-size: contain;
+                    border: 0;
+                }
+                figure{
+                    margin-bottom: 0;
+                }
+            }
+            &.dropdown-lang{}
+            &.dropdown-user{
+                figure{
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #C4C4C4;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

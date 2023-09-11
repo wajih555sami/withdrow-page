@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html dir="ltr">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> W | Withdrow page </title>
+		<link rel="icon" href="favicon.png" type="image/png">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Main style -->
+        <link rel="stylesheet" href="assets/css/main-style.css">
+
+	</head>
+	<body class="body-site" >
+        <header class="header-sec">
+            <div class="container px-md-0">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="./assets/img/logo.svg" alt="website Logo" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#inMobile" aria-controls="inMobile" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="./assets/img/menu.svg">
+                    </button>
+                    <div class="header-side-list collapse navbar-collapse" id="inMobile">
+                        <div class="dropdown hold-dropdown dropdown-lang">
+                            <button class="dropdown-toggle" type="button" id="dropdownLang" data-toggle="dropdown">
+                                <figure class="flag-img">
+                                    <img src="./assets/img/openmoji_flag-united-states.png" alt="flag">
+                                    <span class="">English</span>
+                                </figure>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLang">
+                                <li>
+                                    <button type="button" class="dropdown-item">
+                                        <figure class="flag-img">
+                                            <img src="./assets/img/openmoji_flag-united-states.png" alt="flag">
+                                            <span class="">Arabic</span>
+                                        </figure>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item">
+                                        <figure class="flag-img">
+                                            <img src="./assets/img/openmoji_flag-united-states.png" alt="flag">
+                                            <span class="">Hebro</span>
+                                        </figure>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="bell-btn">
+                            <figure>
+                                <img src="./assets/img/bell.png" alt="bell icon" class="img-fluid" />
+                            </figure>
+                        </a>
+                        <div class="dropdown hold-dropdown dropdown-user">
+                            <button class="dropdown-toggle" type="button" id="dropdownUser" data-toggle="dropdown">
+                                <figure class="user-img">
+                                    <img src="./assets/img/user.png" alt="avatar" class="img-fluid">
+                                </figure>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUser">
+                                <li>
+                                    <a class="dropdown-item" href="#"> Dashboard </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> Edit Profile </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> Sign Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <!-- start withdrow-sec -->
+            <section class="withdrow-sec">
+                <div class="container">
+                    <h1 class="heading-g">Withdrow</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="balance">
+                                <span class="text">Your balance</span>
+                                <strong class="num">16,027$</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="amount">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="amount" name="amount" placeholder="amount you want to withdraw">
+                                </div>
+                                <div class="invalid-feedback">This field is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="heading-g">Choose Saved withdr methods</h4>
+                    <div class="row">
+                        <div class="col-md-6 h-100 mb-3">
+                            <div class="card-method media">
+                                <figure class="hold-icon">
+                                    <img src="./assets/img/bank-icon.svg" alt="bank icon" class="img-fluid">
+                                </figure>
+                                <div class="media-body">
+                                    <p class="info">Bank Name : <span>Bank Name</span></p>
+                                    <p class="info">Bank Address : <span>2715 Ash Dr. San Jose, South Dakota 83475</span></p>
+                                    <p class="info">Owner : <span>Owner</span></p>
+                                    <p class="info">Swift Code : <span> AAAA-BB-CC-123</span></p>
+                                    <p class="info">IBAN: <span>GB 12 ABCD 102030 12345678</span></p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="dropdown">
+                                        <button type="button" class="more-btn " id="dropdownBank" data-toggle="dropdown">
+                                            <img src="./assets/img/more.svg" alt="" class="img-fluid">
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownBank">
+                                            <div class="dropdown-item">
+                                                <img src="./assets/img/edit.svg" alt="" class="img-fluid">
+                                                Edit
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <img src="./assets/img/edit.svg" alt="" class="img-fluid">
+                                                Delete
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input mt-2" name="methodP" id="bank">
+                                        <div class="custom-control-label" for="bank"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 h-100 mb-3">
+                            <div class="card-method wallet-card media custom-control custom-radio">
+                                <figure class="hold-icon">
+                                    <img src="./assets/img/Wallet-icon.svg" alt="Wallet icon" class="img-fluid">
+                                </figure>
+                                <div class="media-body">
+                                    <p class="info">Wallet Name : <span>wallet Name</span></p>
+                                    <p class="info">Owner : <span>Owner</span></p>
+                                    <p class="info">mobile number : <span>+966 0592596154</span></p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="dropdown">
+                                        <button type="button" class="more-btn " id="dropdownWallet" data-toggle="dropdown">
+                                            <img src="./assets/img/more.svg" alt="" class="img-fluid">
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownWallet">
+                                            <div class="dropdown-item">
+                                                <img src="./assets/img/edit.svg" alt="" class="img-fluid">
+                                                Edit
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <img src="./assets/img/edit.svg" alt="" class="img-fluid">
+                                                Delete
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input mt-2" name="methodP" id="wallet">
+                                        <div class="custom-control-label" for="wallet"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="button" class="add-btn">Add New Method</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end withdrow-sec -->
+        </main>
+		
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/main-script.js"></script> 
+
+	</body>
+</html>

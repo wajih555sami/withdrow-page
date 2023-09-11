@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #FCFCFC;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+a, a:hover {
+  color: #6B6E6F;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  font-weight: 400;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mainColor {
+  color: #D81923 !important;
+}
+
+.mainbgColor {
+  background-color: #D81923 !important;
+}
+
+.size-16 {
+  font-size: 16px !important;
+}
+
+.size-12 {
+  font-size: 12px !important;
+}
+
+.size-14 {
+  font-size: 14px !important;
+}
+
+.size-18 {
+  font-size: 18px !important;
+}
+
+.size-20 {
+  font-size: 20px !important;
+}
+
+/* Scrollbar styles */
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #B5B5B5;
+  border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #B5B5B5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.header-sec .navbar {
+  background-color: transparent;
+  padding: 24px 0px;
+  transition: 0.3s;
+}
+.header-sec .navbar.scroll {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.header-sec .navbar .navbar-toggler {
+  border: 0;
+}
+.header-sec .header-side-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-inline-start: auto;
+}
+.header-sec .header-side-list .bell-btn {
+  position: relative;
+  margin: 0 30px;
+}
+.header-sec .header-side-list .bell-btn.active {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 10px;
+  background-color: #CCC;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.header-sec .header-side-list .bell-btn figure {
+  margin-bottom: 0;
+}
+.header-sec .header-side-list .hold-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+.header-sec .header-side-list .hold-dropdown .dropdown-toggle::after {
+  display: inline-block;
+  margin-inline-start: 9px;
+  background: url(../img/icon-down.svg) center no-repeat;
+  width: 10px;
+  height: 6px;
+  background-size: contain;
+  border: 0;
+}
+.header-sec .header-side-list .hold-dropdown .dropdown-toggle figure {
+  margin-bottom: 0;
+}
+.header-sec .header-side-list .hold-dropdown.dropdown-user figure {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #C4C4C4;
+}
+.header-sec .header-side-list .hold-dropdown.dropdown-user figure img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .withdrow-sec {
+    padding: 0 15px;
+  }
+}
+.withdrow-sec > .container {
+  background-color: #FFF;
+  border: 1px solid #E6E6F4;
+  border-radius: 8px;
+  padding: 20px;
+}
+.withdrow-sec .heading-g {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #19224C;
+}
+.withdrow-sec .balance {
+  background-color: #FAFDFF;
+  border-radius: 5px;
+  border: 1px solid #E6E6F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  min-height: 56px;
+  margin-bottom: 30px;
+}
+.withdrow-sec .balance .text {
+  font-size: 16px;
+  color: #434665;
+}
+.withdrow-sec .balance .num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #19224C;
+}
+.withdrow-sec .amount {
+  margin-bottom: 30px;
+}
+.withdrow-sec .amount .input-group .form-control {
+  height: auto;
+  min-height: 56px;
+}
+.withdrow-sec .card-method {
+  background-color: #F6FCFF;
+  border-radius: 16px;
+  padding: 24px 24px;
+  margin-bottom: 24px;
+}
+.withdrow-sec .card-method .hold-icon {
+  margin-bottom: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(180, 122, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.withdrow-sec .card-method .media-body {
+  margin-inline-start: 24px;
+}
+@media (max-width: 768px) {
+  .withdrow-sec .card-method .media-body {
+    margin-inline-start: 15px;
+  }
+}
+.withdrow-sec .card-method .media-body .info {
+  font-size: 16px;
+  color: #19224C;
+  margin-bottom: 16px;
+}
+.withdrow-sec .card-method.wallet-card .hold-icon {
+  background-color: rgba(46, 129, 255, 0.1);
+}
+.withdrow-sec .card-method .dropdown-menu {
+  left: unset !important;
+  right: 5px;
+  top: -16px !important;
+  min-width: 100px;
+}
+.withdrow-sec .card-method .dropdown-menu .dropdown-item {
+  padding: 0.25rem 15px;
+}
+.withdrow-sec .add-btn {
+  color: #D81923;
+  background-color: rgba(216, 25, 35, 0.1);
+  max-width: 185px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=main-style.css.map */
